@@ -67,7 +67,7 @@ function loadvideo() {
 
   $("#loader").css("display", "none")
   $(".top-section").css("display", "block")
-  video[0].currentTime = 2
+  video[0].currentTime = 1
   console.log(video[0].currentTime)
 
 
