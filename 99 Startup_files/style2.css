@@ -1,0 +1,238 @@
+
+dl.stappen {
+    display: block;
+    margin: 50px 0 0;
+  }
+  
+  dl.stappen .item {
+    padding-left: 52px;
+    position: relative;
+  }
+  
+  dl.stappen .item:before {
+    width: 3px;
+    bottom: -2.5rem;
+    position: absolute;
+    content: "";
+    left: 8px;
+    top: 0.25rem;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(33%, #818181), color-stop(0%, rgba(255, 255, 255, 0)));
+    background-image: linear-gradient(#818181 33%, rgba(255, 255, 255, 0) 0%);
+    background-position: right;
+    background-size: 1px 20px;
+    background-repeat: repeat-y;
+  }
+  
+  dl.stappen .item:last-of-type:before {
+    display: none;
+  }
+  
+  dl.stappen .item dt {
+    font-weight: 500;
+    font-size: 21px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  dl.stappen .item dt:first-of-type {
+    margin-top: 0;
+  }
+  
+  dl.stappen .item dt .round {
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background: #eee;
+    background: #818181;
+    border-radius: 50%;
+    z-index: 100;
+    -webkit-transition: width 500ms, height 500ms;
+    transition: width 500ms, height 500ms;
+  }
+  
+  dl.stappen .item dd {
+    font-size: 20px;
+    line-height: 28px;
+    position: relative;
+    margin-bottom: 2rem;
+    font-weight: 400;
+  }
+  
+  dl.stappen .item dd p {
+    margin-bottom: 15px;
+  }
+  
+  dl.stappen .item dd p:last-child {
+    margin-bottom: 0;
+  }
+  
+  dd {
+    max-width: 500px;
+  }
+  
+  .item-heading {
+  
+  
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 16px;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #818181;
+  }
+  
+  dl.stappen .item.active .item-heading {
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 32px;
+    /* identical to box height, or 100% */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #dc1871;
+  }
+  
+  dl.stappen .item.active dt .round {
+    width: 21px;
+    height: 21px;
+    left: -52px;
+    background: #dc1871 content-box;
+    border: 1px dashed #dc1871;
+    padding: 3px;
+    display: inline-block;
+  }
+  
+  #timeline {
+    background: #000;
+    color: #fff;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-size: contain;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+       
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+        justify-content: center;
+            align-items: center;
+    position: relative;
+  }
+  .tl-head h1{font-size: 56px;
+  line-height: 74px;
+font-weight: 400;}
+  @media only screen and (max-width: 690px) {
+    #timeline {
+      display: none;
+    }
+  }
+  
+  #timeline .backgrounds {
+    width: 100%;
+    max-height: 100vh;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+  
+  #timeline .backgrounds::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #timeline .backgrounds .slide {
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  #timeline .backgrounds .slide1 {
+    background-image: url("./q-1.png");
+  }
+  
+  #timeline .backgrounds .slide2 {
+    background-image: url("./q-2.png");
+  }
+  
+  #timeline .backgrounds .slide3 {
+    background-image: url("./q-3.png");
+  }
+  
+  #timeline .backgrounds .slide4 {
+    background-image: url("./q-4.png");
+  }
+  
+  #timeline .backgrounds .slide5 {
+    background-image: url("./q-5.png");
+  }
+  
+  #timeline .tl-wrapper {
+    position: absolute;
+    
+    left:145px;
+  }
+  
+  #timeline .slides {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  #timeline .slides img {
+    width: 100%;
+    height: 100%;
+  }
+ 
+  /*# sourceMappingURL=style.css.map */
+  @media screen and (max-width:1653px) {
+  
+    #timeline .tl-wrapper {
+    position: absolute;
+    left: 85px;}
+  
+  
+  
+  
+  }
+  @media screen and (max-width:1240px) and (max-height:486px) {
+  
+  
+  #timeline .tl-wrapper {
+    position: absolute;
+    left: 100px; }
+    #timeline{
+      height: 120vh;
+    }
+  }
+  @media screen and (min-width: 1440px)  and (max-height:972px){
+    #timeline .tl-wrapper {
+      position: absolute;
+      left: 200px; }
+    }
+  
+@media screen and (min-width: 1024px)  and (max-height:972px){
+  #timeline .tl-wrapper {
+  
+    left: 115px; }
+  
+}
