@@ -45,38 +45,37 @@ $(".work-img-wrapper").hover(function () {
 var video = $("#myvideo")
 var time = 2000;
 
- var  ready = setInterval(() => {
+var ready = setInterval(() => {
   if (video[0].readyState === 4) {
-     loadvideo()
-   
+    loadvideo()
+
   }
   else {
     loader()
     console.log("not load")
   }
-},1000);
+}, 1000);
 
 
 
 function loadvideo() {
-console.log("s")
-
-
-  video[0].currentTime=2
+  console.log("s")
+  $("#loader").css("display", "none")
+  $(".top-section").css("display", "block")
+  video[0].currentTime = 2
   console.log(video[0].currentTime)
-  function reloadStylesheets() {
-    var queryString = '?reload=' + new Date().getTime();
-    $('link[rel="stylesheet"]').each(function () {
-        this.href = this.href.replace(/\?.*|$/, queryString);
-    });
-}
-clearInterval(ready)
+
+  clearInterval(ready)
 
   
  
 }
 
 function loader() {
+
+
+  $(".top-section").css("display", "none")
+  $("#loader").css("display", "block")
 
 }
 
@@ -113,6 +112,20 @@ new Typed('#typed', {
 });
 
 
+new Typed('#ty', {
+  strings: topics,
+  typeSpeed: 80,
+  delaySpeed: 80,
+  loop: true
+});
+
+
+new Typed('#typ', {
+  strings: topics,
+  typeSpeed: 80,
+  delaySpeed: 80,
+  loop: true
+});
 
 new Typed('#type', {
   strings: topics,
