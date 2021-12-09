@@ -17,6 +17,7 @@ $(document).ready(function () {
 
 })
 
+
 let topics = ["mobile apps ", "website ", "product "];
 let slideIndex = 1;
 let slideIndexWork = 1;
@@ -42,7 +43,7 @@ $(".work-img-wrapper").hover(function () {
 })
 
 var video = $("#myvideo")
-
+var time = 2000;
 
  var  ready = setInterval(() => {
   if (video[0].readyState === 4) {
@@ -53,32 +54,22 @@ var video = $("#myvideo")
     loader()
     console.log("not load")
   }
-},200);
+},1000);
 
 
 
 function loadvideo() {
 console.log("s")
 
-  
-  $(".top-section").css("background","linear-gradient(180deg, #DC1871 3.56%, #FF0055 100%)")
-  $(".title").css("color", "white")
-  $("#typed").css("color", "white")
-  $(".build").css("color", "white")
-  $("header").css("background","var(--color-dark)")
-  $(".display-none").css("display", "none")
-  $(".modal").css("display", "block")
-  $(".title").css("color", "white")
-  $("#typed").css("color", "white")
-  $(".run-para").css("display", "block")
-  $(".btn-book").css("display", "block")
-    $(".btn-book").css("background", "white")
-    $("#business-logo").css("display", "block")
-  $(".btn-book").css("color", "var(--color-dark")
 
   video[0].currentTime=2
-    $("#myvideo").css("display", "block")
   console.log(video[0].currentTime)
+  function reloadStylesheets() {
+    var queryString = '?reload=' + new Date().getTime();
+    $('link[rel="stylesheet"]').each(function () {
+        this.href = this.href.replace(/\?.*|$/, queryString);
+    });
+}
 clearInterval(ready)
 
   
@@ -86,20 +77,6 @@ clearInterval(ready)
 }
 
 function loader() {
-
-  $(".top-section").css("background-color", "white")
-  $(".title").css("color", "var(--color-primary)")
-  $("#typed").css("color", "var(--color-primary)")
-  $(".build").css("color", "var(--color-primary)")
-  $(".btn-book").css("background", "var(--color-dark)")
-  $(".btn-book").css("color", "white")
-  $(".modal").css("display", "none")
-  $(".display-none").css("display", "none")
-  $(".main").css("display", "block")
-  $("header").css("background", "white")
-  $("#business-logo").css("display", "none")
-  $("#video-container").css("height", "50vh")
-  $(".run-para").css("display", "none")
 
 }
 
