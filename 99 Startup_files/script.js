@@ -42,18 +42,18 @@ $(".work-img-wrapper").hover(function () {
 })
 
 var video = $("#myvideo")
+var time = 2000;
 
-
-setInterval(() => {
+ var  ready = setInterval(() => {
   if (video[0].readyState === 4) {
      loadvideo()
-    console.log("load")
+   
   }
   else {
     loader()
     console.log("not load")
   }
-}, 1000);
+},1000);
 
 
 
@@ -73,6 +73,11 @@ console.log("s")
   $(".run-para").css("display", "block")
   $(".btn-book").css("display", "block")
   $("#myvideo").css("display", "block")
+  video[0].currentTime=2
+  console.log(video[0].currentTime)
+clearInterval(ready)
+
+  
  
 }
 
