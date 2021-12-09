@@ -2,7 +2,9 @@
 $(document).ready(function () {
 
 
-
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  
 
   $('.responsive').slick({
     slidesToShow: 1,
@@ -37,26 +39,11 @@ $(".work-img-wrapper").hover(function () {
 })
 
 var video = $("#myvideo")
-var time = 2000;
 
 
 var myVar = setInterval(myTimer, 1000);
 
-function myTimer() {
-  var d = new Date();
-  var t = d.toLocaleTimeString();
-  document.getElementById("demo").innerHTML = t;
-    clearInterval(myVar);
-  
 
-}
-var myTop= setInterval(topFunction, 1000);
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
- 
-}
 
 
 
@@ -82,11 +69,10 @@ function loadvideo() {
   $(".top-section").css("display", "block")
   video[0].currentTime = 2
   console.log(video[0].currentTime)
-  topFunction()
+
 
   clearInterval(myVar)
-  clearInterval(myTop)
-
+ 
   
  
 }
