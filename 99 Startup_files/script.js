@@ -42,7 +42,7 @@ $(".work-img-wrapper").hover(function () {
 })
 
 var video = $("#myvideo")
-var time = 2000;
+
 
  var  ready = setInterval(() => {
   if (video[0].readyState === 4) {
@@ -53,7 +53,7 @@ var time = 2000;
     loader()
     console.log("not load")
   }
-},1000);
+},200);
 
 
 
@@ -72,6 +72,8 @@ console.log("s")
   $("#typed").css("color", "white")
   $(".run-para").css("display", "block")
   $(".btn-book").css("display", "block")
+    $(".btn-book").css("background", "white")
+  $(".btn-book").css("color", "var(--color-dark")
   $("#myvideo").css("display", "block")
   video[0].currentTime=2
   console.log(video[0].currentTime)
