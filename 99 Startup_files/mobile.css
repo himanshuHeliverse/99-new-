@@ -1,10 +1,20 @@
 
-  @media screen and (max-width: 500px)   {
+  @media screen and (max-width: 450px) {
+
+    #loader{
+      background-color: white;
+    }
+    #loader header{
+      background-color: white;
+    }
+    #loader header .business-logo{
+      display: none;
+    }
   html {
       font-size: 42.5%;
   }
 
-  #loader-logo,#logo img {
+  .logo img {
 
       width: 90px;
       height: 30px;
@@ -83,8 +93,8 @@ text-align: left;
   .work-img {
       border-radius: 5px;
   }
-
-  .btn-book {
+ 
+  .btn-book{
       font-size: 14px;
       line-height: 20px;
   }
@@ -263,7 +273,7 @@ text-align: left;
       font-size: 14px;
       line-height: 20px;
       height: 140px;
-      width: 365px;
+      width: 268px;
       border-radius: nullpx;
 
   }
@@ -296,9 +306,12 @@ text-align: left;
       letter-spacing: 0.2800000011920929px;
       text-align: center;
 
-
+     
   }
-
+  .btn-boook{
+    background: #2F2F2F;
+    color: white;
+      }
   .build,
   #typed {
       height: 96px;
