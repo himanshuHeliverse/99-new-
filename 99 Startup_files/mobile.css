@@ -427,7 +427,7 @@ footer{
 }
 }
 
-@media screen and (max-width: 400px) and (max-height:823px){
+@media screen and (max-width: 350px) and (max-height:823px){
 
 .build,#typed,title{
   font-size: 24px;
