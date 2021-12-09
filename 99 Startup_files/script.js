@@ -73,6 +73,7 @@ console.log("s")
   $(".run-para").css("display", "block")
   $(".btn-book").css("display", "block")
     $(".btn-book").css("background", "white")
+    $("#business-logo").css("display", "none")
   $(".btn-book").css("color", "var(--color-dark")
 
   video[0].currentTime=2
