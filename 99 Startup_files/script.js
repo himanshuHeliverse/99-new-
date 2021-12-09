@@ -122,7 +122,7 @@ $("#cut-btn").click(function () {
   $("#popup").hide()
 })
 $(".work-img").click(function(){
-  location.href = "./images/pdf/m.pdf"}
+  location.href = "./images/pdf/m.pdf")}
 $(".work-img-wrapper").click(function () {
   location.href = "./images/pdf/m.pdf"
 
