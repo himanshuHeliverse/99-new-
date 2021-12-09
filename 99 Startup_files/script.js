@@ -81,8 +81,8 @@ function loader() {
 
 
 $(".logo").click(function () {
-  location.assign("https://www.99xstartup.com/")
-
+  
+window.open('https://www.99xstartup.com/', '_blank');
 })
 $(".business-logo").click(function () {
   window.open("mailto:")
