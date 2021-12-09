@@ -103,10 +103,11 @@ function loader() {
 
 
 $("#logo").click(function () {
-  location.assign("https://www.99xstartup.com/")
+
+    window.open('https://www.99xstartup.com', '_blank');
 
 })
-$("#business-logo").click(function () {
+$(".business-logo").click(function () {
   window.open("mailto:")
 })
 
@@ -120,8 +121,11 @@ $(".btn-call").click(function () {
 $("#cut-btn").click(function () {
   $("#popup").hide()
 })
+$(".work-img").click(function(){
+  location.href = "./images/pdf/m.pdf"}
 $(".work-img-wrapper").click(function () {
   location.href = "./images/pdf/m.pdf"
+
 })
 
 
