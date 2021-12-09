@@ -1,3 +1,101 @@
+@media screen and (max-width:850px) {
+  .logo img {
+    width: 90px;
+    height: 30px;}
+    .business-logo {
+      font-size: 15px;}
+      .build, .title, #typed {
+        font-size: 40px;
+        
+        line-height: 45px;
+    }
+    .feature-section {
+    
+      padding: 7rem 10rem;
+    }
+    .features-heading {
+      font-size: 40px;
+      line-height: 45px;}
+
+    .btn-book {
+      background-color: var(--color-dark);
+      color: white;
+      width: 151px;
+          height: 40px;
+      font-size: 15px;
+    }
+    header{
+      height: 7rem;
+    }
+    .features-desc {
+
+      height: 50px;
+      font-size: 15px;
+      line-height: 22px;}
+      .feature-heading {
+        font-size: 17px;
+        line-height: 17px;}
+
+
+        .feature-img {
+          height: 320px;
+          width: 440px;
+          border-radius: 6px;
+      }
+
+      .feature-title {
+        margin-top: 3rem;
+        font-size: 20px;
+        line-height: 25px;}
+        .feature-desc {
+          line-height: 25px;
+          font-size: 15px;}
+          .footer-title {
+            font-size: 3.1rem;
+            margin-top: 4.2rem;
+          }
+          .btn-call {
+            width: 120px;
+            padding: 15px;}
+            .quote-text {
+              font-size: 25px;
+              padding: 0px 50px 0px 60px;
+          }
+.quote{ padding: 4rem;}
+
+.slideshow-text{
+  margin: 10px 10px 20px;
+}
+.footer-col{
+  padding: 2.2rem;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   @media screen and (max-width: 450px) {
 
