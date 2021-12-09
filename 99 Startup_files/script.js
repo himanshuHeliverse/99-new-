@@ -69,8 +69,6 @@ function loadvideo() {
   $(".top-section").css("display", "block")
   video[0].currentTime = 1
   console.log(video[0].currentTime)
-
-
   clearInterval(myVar)
  
   
