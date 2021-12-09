@@ -60,8 +60,11 @@ setInterval(() => {
 function loadvideo() {
 console.log("s")
 
-  $("#myvideo").css("display", "block")
-
+  
+  $(".top-section").css("background","linear-gradient(180deg, #DC1871 3.56%, #FF0055 100%)")
+  $(".title").css("color", "white")
+  $("#typed").css("color", "white")
+  $(".build").css("color", "white")
   $("header").css("background","var(--color-dark)")
   $(".display-none").css("display", "none")
   $(".modal").css("display", "block")
@@ -69,8 +72,8 @@ console.log("s")
   $("#typed").css("color", "white")
   $(".run-para").css("display", "block")
   $(".btn-book").css("display", "block")
-  
-  $(".top-section").css("background","linear-gradient(180deg, #DC1871 3.56%, #FF0055 100%)")
+  $("#myvideo").css("display", "block")
+ 
 }
 
 function loader() {
