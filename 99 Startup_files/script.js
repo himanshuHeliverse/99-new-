@@ -101,7 +101,7 @@ function loader() {
 }
 
 
-$("#logo").click(function () {
+$(".logo").click(function () {
 
     window.open('https://www.99xstartup.com', '_blank');
 
