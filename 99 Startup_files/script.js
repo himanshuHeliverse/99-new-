@@ -74,8 +74,9 @@ console.log("s")
   $(".btn-book").css("display", "block")
     $(".btn-book").css("background", "white")
   $(".btn-book").css("color", "var(--color-dark")
-  $("#myvideo").css("display", "block")
+
   video[0].currentTime=2
+    $("#myvideo").css("display", "block")
   console.log(video[0].currentTime)
 clearInterval(ready)
 
