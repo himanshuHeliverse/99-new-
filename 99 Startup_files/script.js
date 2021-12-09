@@ -80,11 +80,11 @@ function loader() {
 }
 
 
-$("#logo").click(function () {
+$(".logo").click(function () {
   location.assign("https://www.99xstartup.com/")
 
 })
-$("#business-logo").click(function () {
+$(".business-logo").click(function () {
   window.open("mailto:")
 })
 
