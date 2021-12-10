@@ -265,7 +265,7 @@ $(document).ready(function () {
   });
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-  console.log("i m top ")
+  
 
 
 })
@@ -319,9 +319,11 @@ function loadvideo() {
   $(".top-section").css("display", "block")
   video[0].currentTime = 2
   console.log(video[0].currentTime)
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 
   clearInterval(myVar)
-  clearInterval(myTop)
+
 
   
  
@@ -332,7 +334,7 @@ function loader() {
 
   $(".top-section").css("display", "none")
   $("#loader").css("display", "block")
-  topFunction()
+
   clearInterval(myTop)
 }
 
