@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-#ty,#typ,#type,#typed{
-  font-weight:bold;
+.row{
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+
 }
 #loader{
-  height: 110vh;
+  height: 90vh;
 background-color: white;
 
   width: 100%;
@@ -588,15 +592,14 @@ height: 20px;
 
 /* Recent work section */
 .recent-work-heading {
+  height: 56px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: 0.2800000011920929px;
   text-align: center;
-  font-weight: 900;
-  color: black;
-  font-size: 4rem;
-
-  /* width: 534
-px
-; */
-  left: 453px;  top: 2252px;
+  
 }
 .all-works {
   width: 100%;
@@ -632,9 +635,74 @@ px
   font-size: 3rem;
   font-weight: 900;
 }
-.work-container > div > img {
-  width: 38rem;
+.row-img {
+  position: relative;
+  max-width: 40%;
   margin: 2rem;
+}
+.row-img img{
+  width: 100%;
+  height: 100%;
+}
+.row-hide-container{
+  color: white;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  padding: 5rem;
+  height: 100%;
+  flex-direction: column;
+  justify-content:flex-end;
+}
+.row-hide-container h2 {
+
+  
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: 0.2800000011920929px;
+text-align: left;
+
+}
+.row-hide-container> div  div{
+  height: 35px;
+margin-right: 10px;
+border: 1px solid white;
+border-radius: 30px;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 16px;
+letter-spacing: 0px;
+text-align: left;
+padding: .9rem;
+
+}
+.row-img:hover.row-hide-para{
+  display: block;
+}
+.row-content{
+  display: flex;
+ 
+  width: 100%;
+  height: 10%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.row-hide-para{
+
+
+width: 427px;
+display: none;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0.2800000011920929px;
+text-align: left;
+
 }
 .badges {
   display: flex;
@@ -1068,97 +1136,12 @@ color: white;
   }
 }
 
-
-/* Media Queryies */
-
-/* For tablet */
-/* @media screen and (min-width: 768px) and (max-width: 1024px) {
-  html {
-    font-size: 52%;
-  }
-  .marquee-container {
-    animation: scroll 20s linear infinite;
-  }
-  .marquee-container1 {
-    animation: scroll Right 20s linear infinite;
-  }
-  video {
-    object-fit: fill;
-  }
+.pink{
+  color: #DC1871;
 }
-@media screen and (max-width:800px){
-  .worked-wrapper{
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  .worked{ height: 50vh;}
-  .work-img-wrapper {
-    width: 450px;
-  }
-  #timeline{
-    height: 70vh;
-  }
+.btn-boook{
+  display: none;
 }
-
-@media screen and (max-width:700px){
-
-  
-  #timeline-mob{
-    display: block;
-  }
-  #timeline{display: none;}
-  .feature-section {
-    flex-direction: column;
-  }
-  .feature-half {
-    width: 100%;}
-.container{
-  flex-direction: column;
-
-}
-.footer-container{
-  flex-direction: column;
-
-  padding: 10px;
-}
-.work-container > div > img {
-  width: 20rem;}
- #timeline-mob-container-wrapper{
-  overflow: scroll;
-    width: 100%;
-    height: 58rem;
-    display: flex;
-    flex-direction: column
-  }
-  #timeline-mob-container-wrapper >div{
-    background-position-x: center;
-    background-size: cover;
-    color: white;
-    width: 100%;
-    display: flex;
-    padding: 0rem 15rem 8rem 5rem;
-    flex-direction: column;
-    justify-content: space-evenly;
-        
-  }
-  #timeline-mob-container-wrapper >div div >p{
-    font-size: 2.3rem;
-    line-height: 3.8rem;
-  }
-  #timeline-mob-container-wrapper >div div >span{
-    font-size: 2.6rem;
-  }
-  #timeline-mob-container-wrapper h3{
-    font-size: 4rem;
-  }
-
-
-
-
-
-}
-/* For Phone */
-
 @media screen and (max-width:1654px) and (max-height:648px){
   
 
@@ -1189,9 +1172,9 @@ color: white;
 
 
 }
-@media screen and (max-width: 1440px)  and (max-height:972px){
+@media screen and (max-width: 1440px){
   header nav{
-    width: 70%;
+    width: 81%;
   }
   .build,.title,#typed,#typ{
     font-size: 50px;
@@ -1201,7 +1184,7 @@ color: white;
     margin: 25px;
     height: 44vh;}
     .feature-section{
-      padding: 10rem 11rem;
+      padding: 10rem ;
     }
     .quote{
       padding: 8rem;
@@ -1209,7 +1192,7 @@ color: white;
     }
     .quote-text{
       width: 100%;
-      padding: 40px 19px 0px 30px;
+      padding: 40px 19px 0px 20px;
     }
     footer{
       padding:4rem 16rem 1rem 16rem ;
@@ -1222,13 +1205,13 @@ color: white;
       width: 100%;
     }
     footer{
-      padding: 4rem 8rem 1rem 8rem;
+      padding: 4rem 8rem 1rem 5rem;
     }
     .footer-container{
       padding: 0;
     }
   }
-@media screen and (max-width: 1234px)  and (max-height:477px){
+@media screen and (max-width: 1234px)  {
  header nav{width:82%}
  #timeline{
    height: 125vh;
@@ -1252,7 +1235,8 @@ header nav{
 
 
 
-@media screen and (max-width: 1024px)  and (max-height:972px){
+@media screen and (max-width: 1024px) {
+  .feature {padding: 0;}
 header nav{
   width: 75%;
 }
@@ -1266,7 +1250,7 @@ header nav{
 .feature-section{
   flex-direction: column;
   align-items: flex-start;
-  padding: 8rem 13rem;
+  padding: 8rem;
 }
 .feature-half{
   width: 100%;
@@ -1274,7 +1258,7 @@ header nav{
 }
 .quote-text{
   font-size: 30px;
-  padding:0px 7px 0px 50px;
+  padding:0px 7px 0px 0px;
 }
 .slideshow-text{
   font-size: 15px;
@@ -1283,7 +1267,7 @@ header nav{
   width: 100%;
 }
 }
-@media screen and (max-width: 768px)  and (max-height:972px){
+@media screen and (max-width: 768px) {
 .build,#typed,.title,#typ{
   font-size: 40px;
 }
@@ -1326,18 +1310,29 @@ header nav{
   
 }
 
-@media screen and (max-width: 600px)  and (max-height:972px){
+@media screen and (max-width: 600px) and (max-height:955px){
+  header nav {
+    width: 78%;
+}
+  .recent-work-heading {   font-size: 42px;
+  }
+  .slideshow-container {
+
+    padding: 0rem 3rem;}
+ 
   .build,#typed,.title,#typ{
   font-size: 32px;
   line-height: 50px;
   height: 100px;
   }
+  .feature-section {
+    padding: 7rem;}
+    .companies-title {
+      font-size: 3rem;}
   .quote-text{
     padding: 35px 11px 35px 53px;
   }
-  .feature-section{
-    padding: 7rem;
-  }
+
   .feature-half{ padding: 0;}
   .quote-text{
     height: 225px;
@@ -1380,38 +1375,3 @@ header nav{
     font-size: 16px;
   }
   }
- 
-/* mobile view css */
-/* @media screen and(min-width:400px) {
-  .modal{ position: absolute;
-    width: 100%;
-    top: 5%;
-    height: 20%;}
-  
-} */
-
-   
-/* 
-@media screen and (max-width: 350px) {
-  .footer-title{margin:3rem;}
-  #timeline-mob-container-wrapper >div {
-    padding: 1rem 3rem 6rem 3rem;
-        flex-direction: column;
-        justify-content: space-around;
-  }
-  .modal{ position: absolute;
-    width: 100%;
-    top: 5%;
-    height: 20%;}
-    .dot_btn {
-      margin: 75px 6px;}
-      .companies {
-        padding: 0;
-      }
-}  */
-.pink{
-  color: #DC1871;
-}
-.btn-boook{
-  display: none;
-}
