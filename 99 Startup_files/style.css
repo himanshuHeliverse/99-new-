@@ -1188,6 +1188,7 @@ color: white;
   .row-hide-container h2 {
     font-size: 25px;}
     .row-hide-para {
+      width:300px;
       font-size: 15px;
     }
   header nav{
