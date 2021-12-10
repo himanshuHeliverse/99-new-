@@ -365,13 +365,19 @@ $(".work-img-wrapper").click(function () {
   window.open('./images/pdf/m.pdf', '_blank');
 
 })
-$(".row-img").hover(function(){
+$(".row-img").mouseover(function(){
+  var para=$(this).find(".row-hide-para")
+para.show(500)
 
- var para=$(this).find(".row-hide-para")
-para.show(1000)
-}
+  
+})
+$(".row-img").mouseleave(function(){
+  var para=$(this).find(".row-hide-para")
+para.hide(500)
 
-)
+  
+})
+
 $(".row-img").click(function(){
   window.open('./images/pdf/m.pdf', '_blank');
 
