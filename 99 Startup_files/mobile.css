@@ -9,13 +9,8 @@
         
         line-height: 45px;
     }
-    .feature-section {
-    
-      padding: 7rem 10rem;
-    }
-    .features-heading {
-      font-size: 40px;
-      line-height: 45px;}
+  
+ 
 
     .btn-book {
       background-color: var(--color-dark);
@@ -29,7 +24,7 @@
     }
     .features-desc {
 
-      height: 50px;
+      height: 80px;
       font-size: 15px;
       line-height: 22px;}
       .feature-heading {
