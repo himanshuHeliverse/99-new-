@@ -216,7 +216,8 @@ display: none;
   border-radius: 5px;
   font-size: 1.7rem;
 }
-#form div>div{
+.input-wrapper{
+  display: flex;
   width: 45%;
 }
 .input-wrapper select,.input-wrapper input{border: none; width: 90%;}
