@@ -204,11 +204,6 @@ function myTimer(){
 }
 
 
-function mytop()
-{
- 
-
-}
 function loadvideo() {
 
   $("#loader").css("display", "none")
@@ -229,7 +224,7 @@ function loader() {
   $(".top-section").css("display", "none")
   $("#loader").css("display", "block")
 
-  clearInterval(myTop)
+  
 }
 
 
