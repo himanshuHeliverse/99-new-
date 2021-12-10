@@ -253,8 +253,7 @@ $("#cut-btn").click(function () {
   $("#popup").hide()
 })
 $(".work-img").click(function(){
-
-  window.open('./images/pdf/m.pdf', '_blank');)}
+  window.open('./images/pdf/m.pdf', '_blank');})
 $(".work-img-wrapper").click(function () {
 
   window.open('./images/pdf/m.pdf', '_blank');
@@ -268,8 +267,8 @@ $(".work-img-wrapper").click(function () {
 
 // )
 $(".row-img").click(function(){
-
   window.open('./images/pdf/m.pdf', '_blank');
+
   
 })
 
