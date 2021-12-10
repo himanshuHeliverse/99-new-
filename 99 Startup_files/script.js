@@ -359,7 +359,7 @@ $("#cut-btn").click(function () {
   $("#popup").hide()
 })
 $(".work-img").click(function(){
-  location.href = "./images/pdf/m.pdf"})
+ window.open('./images/pdf/m.pdf', '_blank');
 $(".work-img-wrapper").click(function () {
 
   window.open('./images/pdf/m.pdf', '_blank');
