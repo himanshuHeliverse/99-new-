@@ -101,6 +101,11 @@
 
 
   @media screen and (max-width: 450px) {
+    #message{width:100%;}
+    #message-popup-containe{
+    height:20vh;
+      border-radius:10px;
+    }
     #option{
       font-size: 6px;
     }
