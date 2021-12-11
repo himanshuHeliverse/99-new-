@@ -1222,7 +1222,7 @@ header nav{
 
 
 @media screen and (max-width: 1024px) {
-
+  #message-popup-container{ width:25%}
   .prev, .next {
     margin: -76px 19px;
     cursor: pointer;
