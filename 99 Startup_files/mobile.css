@@ -101,7 +101,18 @@
 
 
   @media screen and (max-width: 450px) {
-
+    #option{
+      font-size: 6px;
+    }
+    #popup >div {
+      width: 55%;
+    height: 40vh;}
+      #popup >div h1 {
+        font-size: 2.3rem;
+    }
+    .input-wrapper input {
+      font-size: 10px;
+  }
     #loader{
       background-color: white;
     }
@@ -127,10 +138,11 @@
 }
 #timeline-mob-container-wrapper{
   height: 48vh;
+  background-color: black;
 }
   #timeline-mob-container-wrapper>div {
     padding: 4rem 11rem 0rem 4rem;
-        height: 306px;
+        height: 100%;
         color: white;
         display: flex;
         flex-direction: column;
@@ -138,17 +150,18 @@
   }
   .timeline-mob-container-heading{
 
-
     height: 60px;
-width: 256px;
-
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 0px;
-text-align: left;
-
+    width: 256px;
+    padding: 30px;
+    position: absolute;
+    margin: 0;
+    color: white;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
   }
 .timeline-mob-container-para{
   height: 85px;
@@ -299,7 +312,7 @@ text-align: left;
 
   .companies-title {
   line-height:48px;
-      font-size: 24px;
+      font-size: 22px;
   }
 
   .feature-desc {
