@@ -103,7 +103,8 @@
   @media screen and (max-width: 450px) {
     #message{width:100%;}
 #message-popup-container{
-    height:20vh;
+    height:15vh;
+  width:40%;
       border-radius:10px;
     }
     #option{
