@@ -1282,6 +1282,10 @@ header nav{
 }
 }
 @media screen and (max-width: 768px) {
+  
+  
+  #message-popup-container{ height:28%;width:35%}
+  #message{font-size:2.8rem}
   .prev{
     margin: -21px -10px;
     }
