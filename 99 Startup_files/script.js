@@ -1,5 +1,5 @@
 
-let topics = ["mobile apps ", "website ", "product "];
+let topics = ["mobile apps ", "website ", "product's "];
 let slideIndex = 1;
 let slideIndexWork = 1;
 let slideIndexMember = 1;
@@ -109,7 +109,7 @@ function showSlidesQuestion(n) {
 }
 function showSlidesWork(n) {
 
- 
+
   var i;
   var slides = document.getElementsByClassName("mySlides-work");
   var dots = document.getElementsByClassName("dot-work");
@@ -145,9 +145,6 @@ function showSlidesWork(n) {
 
 $(document).ready(function () {
 
-
-
-
   $('.responsive').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -158,7 +155,7 @@ $(document).ready(function () {
   });
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-  
+
 
 
 })
@@ -182,40 +179,44 @@ function myTimer() {
   var d = new Date();
   var t = d.toLocaleTimeString();
   document.getElementById("demo").innerHTML = t;
-    clearInterval(myVar);
-  
+  clearInterval(myVar);
+
 
 }
 
 
 
 
-function myTimer(){
+function myTimer() {
   if (video[0].readyState === 4) {
     loadvideo()
-    
+
   }
   else {
     loader()
-   
+
   }
 
 
 }
 
 
+function mytop() {
+
+
+}
 function loadvideo() {
 
   $("#loader").css("display", "none")
   $(".top-section").css("display", "block")
   video[0].currentTime = 2
-  
+
 
   clearInterval(myVar)
- 
 
-  
- 
+
+
+
 }
 
 function loader() {
@@ -224,13 +225,13 @@ function loader() {
   $(".top-section").css("display", "none")
   $("#loader").css("display", "block")
 
-  
+  clearInterval(myTop)
 }
 
 
 $(".logo").click(function () {
 
-    window.open('https://www.99xstartup.com', '_blank');
+  window.open('https://www.99xstartup.com', '_blank');
 
 })
 $(".business-logo").click(function () {
@@ -247,8 +248,9 @@ $(".btn-call").click(function () {
 $("#cut-btn").click(function () {
   $("#popup").hide()
 })
-$(".work-img").click(function(){
-  window.open('./images/pdf/m.pdf', '_blank');})
+$(".work-img").click(function () {
+  window.open('./images/pdf/m.pdf', '_blank');
+})
 $(".work-img-wrapper").click(function () {
 
   window.open('./images/pdf/m.pdf', '_blank');
@@ -261,28 +263,28 @@ $(".work-img-wrapper").click(function () {
 // }
 
 // )
-$(".row-img").click(function(){
+$(".row-img").click(function () {
   window.open('./images/pdf/m.pdf', '_blank');
 
-  
+
 })
 
-$(".row-img").mouseover(function(){
-  var para=$(this).find(".row-hide-para")
-para.show(500)
+$(".row-img").mouseover(function () {
+  var para = $(this).find(".row-hide-para")
+  para.show(500)
 
-  
+
 })
-$(".row-img").mouseleave(function(){
-  var para=$(this).find(".row-hide-para")
-para.hide(500)
+$(".row-img").mouseleave(function () {
+  var para = $(this).find(".row-hide-para")
+  para.hide(500)
 
-  
+
 })
 
 
 
-  
+
 
 new Typed('#typed', {
   strings: topics,
@@ -420,3 +422,85 @@ function changeFeature(n) {
 
   }
 }
+
+// 
+
+function setData() {
+
+
+}
+
+
+// $("#submit-btn").click(() => {
+//   var msgpopup = document.getElementById("message-popup")
+//   var message = document.getElementById("message")
+//   var container = document.getElementById('form-wrapper')
+//   var name = document.getElementById("name").value
+//   var email = document.getElementById("email").value
+//   var number = document.getElementById("number").value
+//   var obj = {
+//     Name: name,
+//     Email: email,
+//     Phone_number: number
+//   }
+//   if (obj.Name != null) {
+//     if (obj.Email != null) {
+//       if (obj.Phone_number != null) {
+//         callApi(obj)
+//       }
+//       else (
+//         alert("enter your phone number")
+//       )
+//     } else {
+//       alert("enter your email")
+//     }
+//   }
+//   else {
+//     alert("enter your name")
+//   }
+var msgpopup = document.getElementById("message-popup-container")
+var message = document.getElementById("message")  
+var container = document.getElementById('form-wrapper')
+var form = document.getElementById("form");
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action, {
+        method : "POST",
+        body: new FormData(document.getElementById("form")),
+    }).then(
+        response => response.json()
+    ).then((html) => {
+     
+      container.style.display = "none"
+          msgpopup.style.display = "flex"
+        message.innerText = "Thank You! "
+    });
+  });
+
+
+$("#mst-btn").click(()=> {
+  $("#message-popup-container").hide()
+})
+// function callApi() {
+//   fetch("https://sheetdb.io/api/v1/q45tehsrqv3uq",
+//     {
+//       headers: {
+//         'Accept': 'application/json',
+//         'Content-Type': 'application/json'
+//       },
+//       method: "POST",
+//       body: JSON.stringify()
+//     })
+//     .then(res => {
+//       if (res.status == 400) {
+//       
+
+//       }
+
+//     })
+//     .catch(err => {
+//       msgpopup.style.display = "block"
+//       container.style.display = "none"
+//       message.innerText = err
+//     })
+// }
