@@ -24,24 +24,32 @@
       <div class="main-hidden-box"></div>
 
       <section id="popup">
-
-        <div>
+        <article id="message-popup-container" class="form" style="display: none;">
+          <h1 id="message"></h1>
+          <button id="mst-btn" class="submit-btn">Continue</button>
+        </article>
+        <div id="form-wrapper">
           <div id="cut-btn"><img src="./images/close.png" alt=""></div>
 
           <div>
-            <h1 style="font-size: 3rem;">Drop in your details,We"ll get back soon!</h1>
+            <h1>Drop in your details,We"ll get back soon!</h1>
           </div>
-          <div id="form">
-            <div class="input-wrapper"><input type="text" placeholder="Enter your name"></div>
-            <div class="input-wrapper"><input type="email" placeholder="Enter your email"></div>
+          <form id="form" method="post" action="https://sheetdb.io/api/v1/q45tehsrqv3uq">
+            <div class="input-wrapper"><input name="Name" type="text" placeholder="Enter your name" required></div>
+            <div class="input-wrapper"><input type="email" name="Email" placeholder="Enter your email" required></div>
             <div style="display: flex;justify-content: space-between;">
-              <div class="input-wrapper"><div style="border-right: 1px solid;padding-right: 5px;"><img src="./images/flag.png" style="width: 3rem; height 100%" alt=""></div> <select name="" id="">
+              <div class="input-wrapper" style="display:flex; width: 35%;">
+                <div style="border-right: 1px solid;padding-right: 5px;"><img src="./images/flag.png"
+                    style="height: 100%; width: 100%; padding: 4px;" alt=""></div> <select id="option">
                   <option value="91">(+91)</option>
-                </select></div>
-              <div class="input-wrapper"><input type="number"></div>
+                </select>
+              </div>
+              <div class="input-wrapper" style="width: 50%;"><input name="Phone_number" type="number"
+                  placeholder="Enter your phone" required></div>
             </div>
-            <button>continue</button>
-          </div>
+            <button type="submit" class="submit-btn">Continue</button>
+          </form>
+
         </div>
 
       </section>
@@ -60,10 +68,10 @@
         </header>
         <div style="margin:2rem;">
           <div class="white  web-view build pink">
-            Build <span id="typ"></span>  <br>that users fall in love with
+            Build <span id="typ"></span> <br>That’s users fall in love with
           </div>
           <div class="white background mob-view build pink">
-            Build <span id="ty"></span>  <br>that users fall in <br> love with
+            Build <span id="ty"></span> <br>That’s users fall in <br> love with
           </div>
         </div>
         <div class="center">
@@ -239,10 +247,11 @@
 
       <section id="timeline-mob" style="overflow: auto; ;">
         <div id="timeline-mob-container-wrapper">
-          <div class="timeline-mob-container" style="background-image: url('./99 Startup_files/q-1.png');">
+          <h1 class="timeline-mob-container-heading">
+            How we deliver exceptional work? </h1>
+          <div class="timeline-mob-container" style=" background-size: cover;  background-image: url('./99 Startup_files/q-1.png');">
 
-            <div class="timeline-mob-container-heading">
-              How we deliver exceptional work? </div>
+           
             <div>
               <h3 class="pink timeline-mob-container-head ">Discovery</h3>
               <div class="timeline-mob-container-para"> A Series of Interactive sessions with the team and the
@@ -252,9 +261,8 @@
               <span class="time">Timeline: 3-5 Days</span>
             </div>
           </div>
-          <div class="timeline-mob-container" style="background-image: url('./99 Startup_files/q-2.png')">
-            <div class="timeline-mob-container-heading">
-              How we deliver exceptional work? </div>
+          <div class="timeline-mob-container" style="background-size: cover; background-image: url('./99 Startup_files/q-2.png')">
+
             <div>
               <h3 class="pink  timeline-mob-container-head ">Information Architecture</h3>
               <div class="timeline-mob-container-para"> We build a blueprint, with ideas, flows, interaction patterns,
@@ -264,10 +272,8 @@
               <span class="time">Timeline: 1 Week</span>
             </div>
           </div>
-          <div class="timeline-mob-container" style="background-image: url('./99 Startup_files/q-3.png')">
-            <div class="timeline-mob-container-heading">
-              How we deliver exceptional work?
-            </div>
+          <div class="timeline-mob-container" style="background-size: cover; background-image: url('./99 Startup_files/q-3.png')">
+
             <div>
               <h3 class="pink  timeline-mob-container-head ">LOW-Fidelity Wireframes</h3>
               <div class="timeline-mob-container-para"> A rough skeletal version imagined with the stakeholders, journey
@@ -277,10 +283,8 @@
               <span class="time">Timeline: 1 Week - 1 Month</span>
             </div>
           </div>
-          <div class="timeline-mob-container" style="background-image: url('./99 Startup_files/q-4.png')">
-            <div class="timeline-mob-container-heading">
-              How we deliver exceptional work?
-            </div>
+          <div class="timeline-mob-container" style= " background-size: cover; background-image: url('./99 Startup_files/q-4.png')">
+
             <div>
               <h3 class="pink  timeline-mob-container-head ">UI Screens + Mockups</h3>
               <div class="timeline-mob-container-para"> The Final stage - the screens are built around a design system,
@@ -306,20 +310,24 @@
                 <div class="row">
                   <div class="row-img"><img src="./images/features-image/huupe.png" alt="">
                     <div class="row-hide-container">
-                      <h2>huupe</h2>
+                      <h2>Huupe</h2>
                       <div class="row-content">
-                        <div >UI/UX</div><div>Web Development</div>
+                        <div>UI/UX</div>
+                        <div>Web Development</div>
                       </div>
-                      <div class="row-hide-para">We were assigned to design the website with a more focused approach on the brand and a smooth experience in getting their hands on the smartest hoops.</div>
+                      <div class="row-hide-para">We were assigned to design the website with a more focused approach on
+                        the brand and a smooth experience in getting their hands on the smartest hoops.</div>
                     </div>
                   </div>
                   <div class="row-img"> <img src="./images/features-image/gotissue.png" alt="">
                     <div class="row-hide-container">
                       <h2>We’ve Got Issues</h2>
                       <div class="row-content">
-                        <div >UI/UX</div><div>Web Development</div>
+                        <div>UI/UX</div>
+                        <div>Web Development</div>
                       </div>
-                      <div class="row-hide-para">We collaborated with WGT to enlighten people about issues that matter with intuitive UX, stunning branding, and Web Design.</div>
+                      <div class="row-hide-para">We collaborated with WGT to enlighten people about issues that matter
+                        with intuitive UX, stunning branding, and Web Design.</div>
                     </div>
                   </div>
 
@@ -330,18 +338,26 @@
                     <div class="row-hide-container">
                       <h2>Fuse.io</h2>
                       <div class="row-content">
-                        <div >UI/UX</div> <div>Content</div><div>Web Development</div>
+                        <div>UI/UX</div>
+                        <div>Content</div>
+                        <div>Web Development</div>
                       </div>
-                      <div class="row-hide-para">We were assigned to bring the idea to life and design a MVP that helps the end-user manage, grow and put their money to work with ease.We were assigned to bring the idea to life and design a MVP that helps the end-user manage, grow and put their money to work with ease..</div>
+                      <div class="row-hide-para">We were assigned to bring the idea to life and design a MVP that helps
+                        the end-user manage, grow and put their money to work with ease.We were assigned to bring the
+                        idea to life and design a MVP that helps the end-user manage, grow and put their money to work
+                        with ease..</div>
                     </div>
                   </div>
                   <div class="row-img"> <img src="./images/features-image/health.png" alt="">
                     <div class="row-hide-container">
                       <h2>Healthcare</h2>
                       <div class="row-content">
-                        <div >UI/UX</div><div>Web Development</div> <div>Content</div>
+                        <div>UI/UX</div>
+                        <div>Web Development</div>
+                        <div>Content</div>
                       </div>
-                      <div class="row-hide-para">We partnered with a leading Healthcare service provider in india to make surgeries easily accessible to anyone and everyone that needs them. </div>
+                      <div class="row-hide-para">We partnered with a leading Healthcare service provider in india to
+                        make surgeries easily accessible to anyone and everyone that needs them. </div>
                     </div>
                   </div>
 
@@ -357,19 +373,24 @@
                     <div class="row-hide-container">
                       <h2>Kickpick</h2>
                       <div class="row-content">
-                        <div >UI/UX</div> <div>Content</div><div>App Development</div>
+                        <div>UI/UX</div>
+                        <div>Content</div>
+                        <div>App Development</div>
                       </div>
                       <div class="row-hide-para">We partnered with kickpick to create and design an
-                        MVP of the e-commerce app, that allows users get their hands on all the freshest and latest drops with ease. .</div>
+                        MVP of the e-commerce app, that allows users get their hands on all the freshest and latest
+                        drops with ease. .</div>
                     </div>
                   </div>
                   <div class="row-img"> <img src="./images/features-image/insurence.png" alt="">
                     <div class="row-hide-container">
                       <h2>Insurance</h2>
                       <div class="row-content">
-                        <div >UI/UX</div> <div>Content</div>
+                        <div>UI/UX</div>
+                        <div>Content</div>
                       </div>
-                      <div class="row-hide-para">We collaborated with a leading insurance firm that offers multiple insurance products to streamline, Sales, Finance & Product with intuitve UX/UI.</div>
+                      <div class="row-hide-para">We collaborated with a leading insurance firm that offers multiple
+                        insurance products to streamline, Sales, Finance & Product with intuitve UX/UI.</div>
                     </div>
                   </div>
 
@@ -381,18 +402,24 @@
                     <div class="row-hide-container">
                       <h2>Alivio</h2>
                       <div class="row-content">
-                        <div >UI/UX</div><div>Web Development</div>  <div>Content</div>
+                        <div>UI/UX</div>
+                        <div>Web Development</div>
+                        <div>Content</div>
                       </div>
-                      <div class="row-hide-para">Alivio is a fitness and personal care app that offers content on-demand from top-notch fitness instructors, therapists and coaches worldwide..</div>
+                      <div class="row-hide-para">Alivio is a fitness and personal care app that offers content on-demand
+                        from top-notch fitness instructors, therapists and coaches worldwide..</div>
                     </div>
                   </div>
                   <div class="row-img"> <img src="./images/features-image/oto capital.png" alt="">
                     <div class="row-hide-container">
                       <h2>OTO Capital</h2>
                       <div class="row-content">
-                        <div >UI/UX</div> <div>Content</div> <div>Content</div>
+                        <div>UI/UX</div>
+                        <div>Content</div>
+                        <div>Content</div>
                       </div>
-                      <div class="row-hide-para">We partnered with OTO to reimagine buying automobiles. So we made the entire journey socially engaging plus immersive experiences..</div>
+                      <div class="row-hide-para">We partnered with OTO to reimagine buying automobiles. So we made the
+                        entire journey socially engaging plus immersive experiences..</div>
                     </div>
                   </div>
 
@@ -408,18 +435,23 @@
                     <div class="row-hide-container">
                       <h2>Tekorero</h2>
                       <div class="row-content">
-                        <div >UI/UX</div>  <div>Content</div><div>App Development</div>
+                        <div>UI/UX</div>
+                        <div>Content</div>
+                        <div>App Development</div>
                       </div>
-                      <div class="row-hide-para">We collaborated to design the website with a more focused approach on kids and learning experiences to get them from just coding to exceptional coders.</div>
+                      <div class="row-hide-para">We collaborated to design the website with a more focused approach on
+                        kids and learning experiences to get them from just coding to exceptional coders.</div>
                     </div>
                   </div>
                   <div class="row-img"><img src="./images/features-image/intute.png" alt="">
                     <div class="row-hide-container">
                       <h2>Gausmann</h2>
                       <div class="row-content">
-                        <div >UI/UX</div><div>Web Development</div>
+                        <div>UI/UX</div>
+                        <div>Web Development</div>
                       </div>
-                      <div class="row-hide-para">We helped Gausmann design and build their website and CMS  from scratch, while keeping the aesthetics clean minimal, and user-friendly.</div>
+                      <div class="row-hide-para">We helped Gausmann design and build their website and CMS from scratch,
+                        while keeping the aesthetics clean minimal, and user-friendly.</div>
                     </div>
                   </div>
 
@@ -430,18 +462,22 @@
                     <div class="row-hide-container">
                       <h2>Intuit</h2>
                       <div class="row-content">
-                        <div >UI/UX</div><div>Web Development</div>
+                        <div>UI/UX</div>
+                        <div>Web Development</div>
                       </div>
-                      <div class="row-hide-para">We helped Intuit design and build a brand new website, from scratch with stunning aesthetics, that’s clean and minimal.</div>
+                      <div class="row-hide-para">We helped Intuit design and build a brand new website, from scratch
+                        with stunning aesthetics, that’s clean and minimal.</div>
                     </div>
                   </div>
                   <div class="row-img"> <img src="./images/features-image/consilium.png" alt="">
                     <div class="row-hide-container">
                       <h2>Concelium</h2>
                       <div class="row-content">
-                        <div >UI/UX</div><div>Web Development</div>
+                        <div>UI/UX</div>
+                        <div>Web Development</div>
                       </div>
-                      <div class="row-hide-para">We helped them redesign their website structure and architecture with more emphasis on the brand also keeping it clean, functional, and highly intuitive.</div>
+                      <div class="row-hide-para">We helped them redesign their website structure and architecture with
+                        more emphasis on the brand also keeping it clean, functional, and highly intuitive.</div>
                     </div>
                   </div>
 
