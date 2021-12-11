@@ -357,7 +357,7 @@ text-align: left;
   }
 
   .feature {
-      padding: 4.4rem;
+      padding: 3.3rem;
   }
 
   .features {
@@ -366,7 +366,7 @@ text-align: left;
 
   #feature-section-mobile-first-child {
       background-color: #ededed;
-      padding: 4.4rem;
+      padding: 3.3rem;
 
   }
 
@@ -381,7 +381,7 @@ text-align: left;
   }
 
   .about-member-container {
-      margin: 70px 5px 0px;
+      margin: 30px 5px 0px;
 
   }
 
@@ -390,10 +390,11 @@ text-align: left;
   }
 
   .slideshow-text {
+    margin:10px 0px;
       font-size: 14px;
       line-height: 20px;
       height: 140px;
-      width: 268px;
+      width: 340px;
       border-radius: nullpx;
 
   }
