@@ -249,25 +249,49 @@ $("#cut-btn").click(function () {
   $("#popup").hide()
 })
 $(".work-img").click(function () {
-  window.open('./images/pdf/m.pdf', '_blank');
+  var id = $(this).attr("id")
+  var link = returnDay(id)
+  window.open(link, '_blank');
 })
-$(".work-img-wrapper").click(function () {
 
-  window.open('./images/pdf/m.pdf', '_blank');
+function returnDay(val) {
+  switch (val) {
+    case "1":
+      return "https://drive.google.com/file/d/1I2VSRgXRIoftl7Sp5Pnk8rGF1F4w3Nqc/view?usp=sharing";
+    case "2":
+      return "https://drive.google.com/file/d/1n_fdY76AGN22locgzbnv27vMb80P8i-G/view?usp=sharing";
+    case "3":
+      return "https://drive.google.com/file/d/1tDsX2G9lhFtb3GkyPmXXJQYsdcZ_0gnC/view?usp=sharing";
+    case "4":
+      return "https://drive.google.com/file/d/1EbpEJC8jRgaArIy1Mg6JDAevCipi_IoC/view?usp=sharing";
+    case "5":
+      return "https://drive.google.com/file/d/1R6wDkpy-dYn3rn0K9oP2UvOInE-xDGiO/view?usp=sharing";
+    case "6":
+      return "https://drive.google.com/file/d/1s37825aCWfGU5_G2JyJO3DC7nDQHEvmk/view?usp=sharing";
+    case "7":
+      return "https://drive.google.com/file/d/1vtuxvdaN-CHlFMgYPW2oiB_b5R-bwRfm/view?usp=sharing";
+    case "8":
+      return "https://drive.google.com/file/d/13sEW5Lfdsqlaj7iGO3-i0DIfSCtaj7bn/view?usp=sharing";
+    case "9":
+      return "https://drive.google.com/file/d/1A7VwcQH0rWFeox9nRaprtw4dO8xmpSey/view?usp=sharing";
+    case "10":
+      return "https://drive.google.com/file/d/1fA-2O1kLCoB3GjB_OfDXXJ8ou9h4wITr/view?usp=sharing";
+    case "11":
+      return "https://drive.google.com/file/d/1UK90fWgCs9piGeBexLuXVY2OmgvdySVR/view?usp=sharing";
+    case "12":
+      return "https://drive.google.com/file/d/1A6QBq2P_g1rmE5f2Q-9Am1niO4CQeYmt/view?usp=sharing";
 
-})
-// $(".row-img").hover(function(){
-
-//  var para=$(this).find(".row-hide-para")
-// para.show(1000)
-// }
-
-// )
+  }
+}
 $(".row-img").click(function () {
-  window.open('./images/pdf/m.pdf', '_blank');
-
-
+  var id = $(this).find("img").attr("id")
+  var link = returnDay(id)
+  window.open(link, '_blank');
 })
+
+
+
+
 
 $(".row-img").mouseover(function () {
   var para = $(this).find(".row-hide-para")
@@ -433,74 +457,30 @@ function setData() {
 
 // $("#submit-btn").click(() => {
 //   var msgpopup = document.getElementById("message-popup")
-//   var message = document.getElementById("message")
-//   var container = document.getElementById('form-wrapper')
-//   var name = document.getElementById("name").value
-//   var email = document.getElementById("email").value
-//   var number = document.getElementById("number").value
-//   var obj = {
-//     Name: name,
-//     Email: email,
-//     Phone_number: number
-//   }
-//   if (obj.Name != null) {
-//     if (obj.Email != null) {
-//       if (obj.Phone_number != null) {
-//         callApi(obj)
-//       }
-//       else (
-//         alert("enter your phone number")
-//       )
-//     } else {
-//       alert("enter your email")
-//     }
-//   }
-//   else {
-//     alert("enter your name")
-//   }
+
 var msgpopup = document.getElementById("message-popup-container")
-var message = document.getElementById("message")  
+var message = document.getElementById("message")
 var container = document.getElementById('form-wrapper')
 var form = document.getElementById("form");
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    fetch(form.action, {
-        method : "POST",
-        body: new FormData(document.getElementById("form")),
-    }).then(
-        response => response.json()
-    ).then((html) => {
-     
-      container.style.display = "none"
-          msgpopup.style.display = "flex"
-        message.innerText = "Thank You! "
-    });
-  });
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(document.getElementById("form")),
+  }).then(response => response.json()).then((html) => {
+
+    container.style.display = "none"
+    msgpopup.style.display = "flex"
+    message.innerText = "Thank You! "
+  }).catch(err => {
+    container.style.display = "none"
+    msgpopup.style.display = "flex"
+    message.innerText = err
+    message.style.color = "red"
+  })
+});
 
 
-$("#mst-btn").click(()=> {
+$("#mst-btn").click(() => {
   $("#message-popup-container").hide()
 })
-// function callApi() {
-//   fetch("https://sheetdb.io/api/v1/q45tehsrqv3uq",
-//     {
-//       headers: {
-//         'Accept': 'application/json',
-//         'Content-Type': 'application/json'
-//       },
-//       method: "POST",
-//       body: JSON.stringify()
-//     })
-//     .then(res => {
-//       if (res.status == 400) {
-//       
-
-//       }
-
-//     })
-//     .catch(err => {
-//       msgpopup.style.display = "block"
-//       container.style.display = "none"
-//       message.innerText = err
-//     })
-// }
