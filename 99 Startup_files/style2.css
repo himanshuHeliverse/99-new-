@@ -29,7 +29,7 @@ dl.stappen {
   
   dl.stappen .item dt {
     font-weight: 500;
-    font-size: 21px;
+    font-size: 15px;
     margin-top: 15px;
     margin-bottom: 5px;
     cursor: pointer;
@@ -138,9 +138,10 @@ dl.stappen {
             align-items: center;
     position: relative;
   }
-  .tl-head h1{font-size: 56px;
-  line-height: 74px;
+  .tl-head h1{font-size:40px;
+  line-height: 100px;
 font-weight: 400;}
+
   @media only screen and (max-width: 690px) {
     #timeline {
       display: none;
