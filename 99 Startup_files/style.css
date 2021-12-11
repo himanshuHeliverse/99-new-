@@ -1382,7 +1382,7 @@ header nav{
 
 @media screen and (max-width: 600px) {
   .input-wrapper {
-    height: 16px;
+    height: 26px;
 }
   #popup >div {
   height: 48vh;
