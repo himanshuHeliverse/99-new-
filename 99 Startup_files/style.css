@@ -1219,9 +1219,45 @@ header nav{
   display: none;
 }
 
+@media screen and (max-width:1240px) and (max-height:648px) {
 
+  .row-img {
+    position: relative;
+    max-width: 35%;}
+
+    .feature-half {
+      width: 50%;
+      flex: 1;
+      padding: 0px 50px 0px 30px;
+  }
+
+  .feature-img {
+    height: 330px;
+    width: 420px;
+}
+.feature-heading {
+  font-size: 22px;
+  line-height: 30px;}
+  .features-desc {
+    height: 100px;}
+
+
+
+
+}
 
 @media screen and (max-width: 1024px) {
+  .feature-heading {
+    font-size: 20px;
+    line-height: 22px;}
+
+  .features-desc {
+    width: 100%;
+    height: 150px;
+    line-height: 25px;
+}
+
+
   #message-popup-container{ width:25%}
   .prev, .next {
     margin: -76px 19px;
@@ -1262,17 +1298,13 @@ header nav{
   font-size: 50px;
 }
 .feature-section{
-  flex-direction: column;
+  
   align-items: flex-start;
   padding: 8rem;
 }
-.feature-half{
-  width: 100%;
-  padding: auto;
-}
 .quote-text{
   font-size: 30px;
-  padding:0px 7px 0px 0px;
+  padding:0px 7px 0px 30px;
 }
 .slideshow-text{
   font-size: 15px;
@@ -1280,10 +1312,29 @@ header nav{
   margin: 10px 8px 93px;
   width: 100%;
 }
+.feature-half {
+  width: 50%;
+  flex: 1;
+  padding: 0px 40px 0px 25px;}
 }
-@media screen and (max-width: 768px) {
-  
-  
+.feature-img {
+  height: 350px;  width: 450px;
+
+}
+.features-heading {
+  font-size: 40px;;
+  line-height: 45px;}
+
+
+@media screen and (max-width: 768px) and (max-height:972px) {
+  .feature-desc {
+    line-height: 26px;
+    font-size: 20px;
+}
+  .feature-half {
+    width: 50%;
+    flex: 1;
+    padding: 0px 40px 0px 0px;}
   #message-popup-container{ height:28%;width:35%}
   #message{font-size:2.8rem}
   .prev{
@@ -1358,8 +1409,8 @@ header nav{
   text-align: initial;
   padding: 35px 188px 35px 80px}
   .slideshow-text{
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 30px;
     margin: 30px 18px 60px ;
   }
 
