@@ -150,7 +150,6 @@ header{
   height: 10rem;
   width: 100%;
   color: white;
- 
 
 }
  header nav{
@@ -171,13 +170,6 @@ display: none;
  .logo img{    width: 148px;
 
 height: 48px;}
-
-
-
-
-
-
-
 
 .dot_btn{text-align: center ;margin: 35px 6px;}
 .top-section:first-child{
