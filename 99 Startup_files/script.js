@@ -392,7 +392,7 @@ function changeFeature(n) {
       featuresHeading[1].classList.add("black");
       featuresHeading[4].classList.add("black");
       featuresHeading[3].classList.add("black");
-      featureImg.src = "./images/features-image/project.png";
+      featureImg.src = "./images/features-image/img-3.png";
       featureTitle.textContent = "Collaboration, Team & Project Management";
       featureDesc.textContent =
         "Say goodbye to the limitations. Whether you’re an early Stage Startup or an Enterprise, we cater to services across categories. Plug & Play subscriptions on the fly.";
@@ -449,14 +449,7 @@ function changeFeature(n) {
 
 // 
 
-function setData() {
 
-
-}
-
-
-// $("#submit-btn").click(() => {
-//   var msgpopup = document.getElementById("message-popup")
 
 var msgpopup = document.getElementById("message-popup-container")
 var message = document.getElementById("message")
@@ -464,7 +457,7 @@ var container = document.getElementById('form-wrapper')
 var form = document.getElementById("form");
 form.addEventListener("submit", e => {
   e.preventDefault();
-  fetch(form.action, {
+  fetch("https://sheetdb.io/api/v1/q45tehsrqv3uq", {
     method: "POST",
     body: new FormData(document.getElementById("form")),
   }).then(response => response.json()).then((html) => {
