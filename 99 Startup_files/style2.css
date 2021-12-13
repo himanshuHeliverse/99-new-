@@ -259,6 +259,9 @@ font-weight: 400;}
     #timeline .tl-wrapper {
       position: absolute;
       left: 200px; }
+      #timeline {
+    height: 100vh;
+}
     }
   
 @media screen and (min-width: 1024px)  and (max-height:972px){
@@ -266,6 +269,7 @@ font-weight: 400;}
     position: absolute;
     left: 120px;
 }
+    
 
 
 
