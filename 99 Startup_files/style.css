@@ -1243,6 +1243,10 @@ header nav{
 .mob-view{
   display: none;
 }
+@media screen and (max-width:768px) and (max-height:486px) {
+
+#popup>div {
+    height:85vh;}
 
 @media screen and (max-width:1240px) and (max-height:648px) {
 
