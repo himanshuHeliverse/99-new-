@@ -142,14 +142,7 @@ dl.stappen {
   line-height: 100px;
 font-weight: 400;}
 
-  @media only screen and (max-width: 600px) {
-    #timeline {
-      display: none;
-    }
-    .recent-work-section{
-      display: none;
-    }
-  }
+
   
   #timeline .backgrounds {
     width: 100%;
@@ -207,6 +200,26 @@ font-weight: 400;}
     height: 100%;
   }
  
+  @media only screen and (max-width: 600px) and (max-height:972px) {
+    #timeline .tl-wrapper {
+      left: 40px;
+  }
+  #timeline {
+    height: 80vh
+}
+.quote-text {
+  padding: 35px 11px 35px 25px;
+}
+
+.tl-head h1 {
+  font-size: 35px;
+  line-height: 50px;}
+  .prev{
+    left: 0;
+  }.feature {
+    width: 70%;}
+  }
+
   /*# sourceMappingURL=style.css.map */
   @media screen and (max-width:1653px) {
   
@@ -282,4 +295,8 @@ font-weight: 400;}
 
 }
 
-
+@media screen and (max-width: 500px) {
+  #timeline{
+    display: none;
+  }
+}
