@@ -851,6 +851,7 @@ color: var(--color-primary);
 text-decoration-color: var(--color-primary);
 }
 .btn-call {
+font-size:18px;
 border: none;
 outline: none;
 color: white;
