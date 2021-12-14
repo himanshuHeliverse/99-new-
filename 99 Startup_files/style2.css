@@ -200,26 +200,6 @@ font-weight: 400;}
     height: 100%;
   }
  
-  @media only screen and (max-width: 600px) and (max-height:972px) {
-    #timeline .tl-wrapper {
-      left: 40px;
-  }
-  #timeline {
-      display:none;
-    height: 80vh
-}
-.quote-text {
-  padding: 35px 11px 35px 25px;
-}
-
-.tl-head h1 {
-  font-size: 35px;
-  line-height: 50px;}
-  .prev{
-    left: 0;
-  }.feature {
-    width: 70%;}
-  }
 
   /*# sourceMappingURL=style.css.map */
   @media screen and (max-width:1653px) {
@@ -234,7 +214,9 @@ font-weight: 400;}
   }
   @media screen and (max-width:1240px) and (max-height:486px) {
   
-  
+    .tl-head h1 {
+      font-size: 30px;
+  }
   #timeline .tl-wrapper {
     position: absolute;
     left: 100px; }
@@ -250,12 +232,22 @@ font-weight: 400;}
 
   @media screen and (max-width:1024px) and (max-height:486px) {
   #timeline {
-    height: 130vh;}
-
-
-
-
+    height: 100vh;}
+    dl.stappen .item.active .item-heading {
+      font-size: 1.8rem;
+  }
+  dl.stappen .item dd p{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  dl.stappen {
+    display: block;
+    margin: 15px 0 0;
 }
+.item-heading {
+
+  font-size: 1rem;
+}}
   @media screen and (min-width: 1440px)  and (max-height:972px){
     #timeline .tl-wrapper {
       position: absolute;
@@ -266,38 +258,70 @@ font-weight: 400;}
     }
   
 @media screen and (min-width: 1024px)  and (max-height:972px){
+
   #timeline .tl-wrapper {
     position: absolute;
     left: 120px;
 }
-    
-
-
-
-
 }
-@media screen and (min-width: 750px)  and (max-height:972px){
-  dl.stappen .item.active .item-heading {
 
-    font-size: 2.4rem;
-  
-  }
+
+
+
+
+@media screen and (min-width: 770px)  and (max-height:972px){
+
   
   .tl-head h1 {
     font-size: 35px;}
- 
+  }
 @media screen and (min-width: 768px)  and (max-height:648px){
-  #timeline {
-    height: 100vh;}
+  /* #timeline {
+    height: 100vh;} */
 
 }
 
 @media screen and (min-width: 768px)  and (max-height:468px){
-  #timeline {
-    height: 120vh;}
+  /* #timeline {
+    height: 120vh;} */
 
 }
+@media only screen and (max-width: 600px) and (max-height:972px) {
+  #timeline .tl-wrapper {
+    left: 40px;
+}
+dl.stappen .item.active .item-heading {
+  font-size: 2rem;}
+  dl.stappen .item dd {
+    font-size: 15px;
+    padding-right: 130px;
+    line-height: 20px;}
+    .item-heading {
+      font-size: 1rem;
+    }
+#timeline {
+  height: 60vh;
+}
+.quote-text {
+padding: 35px 11px 35px 25px;
+}
 
+.tl-head h1 {
+font-size: 35px;
+line-height: 50px;}
+.prev{
+  left: 0;
+}.feature {
+  width: 70%;}
+}
+
+
+
+@media only screen and (max-width: 600px) and (max-height:486px) {
+#timeline {
+  height: 100vh;
+}
+}
 @media screen and (max-width: 500px) {
   #timeline{
     display: none;
