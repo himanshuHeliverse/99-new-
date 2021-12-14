@@ -225,6 +225,7 @@ text-align: left;
       margin: 2rem 0rem;
       width: 150%;
       position: relative;
+    animation:none;
   }
 
   header nav div div {
