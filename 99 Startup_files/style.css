@@ -201,7 +201,7 @@ height: 100vh;
   font-size: 3.3rem;
 }
 #popup >div{
-  position:relitive;
+  position:relative;
   top:17%;
   display: flex;
   background: white;
