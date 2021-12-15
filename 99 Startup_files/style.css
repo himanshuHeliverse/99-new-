@@ -194,13 +194,15 @@ padding: 5rem;
 display: none;
   z-index: 2;
 height: 100vh;
-top: 4%;
+  background-color: rgba(0,0,0,0.5);
   position: fixed;
 }
 #popup >div h1{
   font-size: 3.3rem;
 }
 #popup >div{
+  position:relitive;
+  top:17%;
   display: flex;
   background: white;
   width: 30%;
@@ -1111,6 +1113,7 @@ color: white;
 
 @media screen and (max-width: 1440px) and (max-height:972px){
   #popup >div {
+    top:25%;
     height: 50vh;
   }
   #popup >div h1 {
@@ -1175,7 +1178,7 @@ color: white;
 
   @media screen and (max-width: 1440px) and (max-height:648px){
     #popup >div{
-  
+  top:12%;
    height: 75vh;
       width:35%
     }
@@ -1210,7 +1213,7 @@ color: white;
 
 @media screen and (max-width: 1240px) and (max-height:486px){
   #popup >div{
-
+top:10%;
  height: 80vh;
         padding: 3.8rem;
   }
@@ -1233,6 +1236,7 @@ color: white;
 }
     #popup >div {
       width: 40%;
+      top:27%;
       height: 45vh;
   }
     .feature-heading {
@@ -1310,7 +1314,7 @@ color: white;
   }
   @media screen and (max-width: 1024px) and (max-height:648px){
     #popup >div{
-  
+  top:15%;
    height: 70vh;
     }
     #popup>div h1 {
@@ -1322,6 +1326,7 @@ color: white;
     font-size: 2.3rem;
 }
 #popup>div{
+    top:15%;
   height:70vh;
   width:36%;
   }
@@ -1342,6 +1347,7 @@ color: white;
     height: 36vh;
     width: 40%;
     padding:3rem;
+    top:32%;
 }
   .feature-desc {
     line-height: 26px;
@@ -1448,7 +1454,7 @@ color: white;
   
 }@media screen and (max-width: 778px) and (max-height:648px){
   #popup >div{
-
+top:25%;
  height: 50vh;
   }
   .submit-btn{
@@ -1458,7 +1464,8 @@ color: white;
 @media screen and (max-width:778px) and (max-height:486px) {
 
   #popup>div {
-      height:70vh;}
+      height:70vh;
+  top:15%;}
   #popup>div h1 {
     font-size: 1.7rem;
 }
