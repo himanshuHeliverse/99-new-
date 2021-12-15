@@ -206,8 +206,8 @@ top: 4%;
   width: 30%;
   box-shadow: 0px 0px 20px black;
  border-radius: 10px;
-  padding: 3rem;
-height: 55vh;
+  padding: 4.3rem;
+height: 65vh;
   margin: auto;
   flex-direction: column;
   align-items: flex-start;
@@ -1111,7 +1111,7 @@ color: white;
 
 @media screen and (max-width: 1440px) and (max-height:972px){
   #popup >div {
-    height: 45vh;
+    height: 50vh;
   }
   #popup >div h1 {
     font-size: 2.9rem;
@@ -1176,7 +1176,8 @@ color: white;
   @media screen and (max-width: 1440px) and (max-height:648px){
     #popup >div{
   
-   height: 70vh;
+   height: 75vh;
+      width:35%
     }
   }
   
@@ -1210,7 +1211,8 @@ color: white;
 @media screen and (max-width: 1240px) and (max-height:486px){
   #popup >div{
 
- height: 75vh;
+ height: 80vh;
+        padding: 3.8rem;
   }
 
   #popup >div h1 {
@@ -1226,9 +1228,12 @@ color: white;
 
 
   @media screen and (max-width: 1024px) and (max-height:972px) {
+    #popup>div h1 {
+    font-size: 2.7rem;
+}
     #popup >div {
       width: 40%;
-      height: 50vh;
+      height: 45vh;
   }
     .feature-heading {
       font-size: 20px;
@@ -1315,7 +1320,7 @@ color: white;
     font-size: 2.8rem;
 }
   }
-@media screen and (max-width: 1006px) and (max-height:486px){
+@media screen and (max-width: 1024px) and (max-height:486px){
 #popup>div{
   height:70vh;
   width:36%;
