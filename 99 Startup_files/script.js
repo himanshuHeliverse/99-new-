@@ -1,5 +1,5 @@
 
-let topics = ["mobile apps ", "website ", "product's "];
+let topics = ["mobile apps ", "website ", "product"];
 let slideIndex = 1;
 let slideIndexWork = 1;
 let slideIndexMember = 1;
